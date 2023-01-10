@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_addmember">
+
+    <fragment
+        android:id="@+id/nav_addmember"
+        android:name="com.example.msgapp.ui.AddMemberFragment"
+        android:label="Üye Ekle"
+        tools:layout="@layout/fragment_message" />
+
+    <fragment
+        android:id="@+id/nav_createmessage"
+        android:name="com.example.msgapp.ui.CreateMessageFragment"
+        android:label="Mesaj Oluştur"
+        tools:layout="@layout/fragment_createmessage" />
+
+    <fragment
+        android:id="@+id/nac_creategroup"
+        android:name="com.example.msgapp.ui.CreateGroupFragment"
+        android:label="Grup Oluştur"
+        tools:layout="@layout/fragment_creategroup" />
+    <fragment
+        android:id="@+id/nav_message"
+        android:name="com.example.msgapp.ui.MessageFragment"
+        android:label="Mesaj Gönder"
+        tools:layout="@layout/fragment_addmember" />
+</navigation>

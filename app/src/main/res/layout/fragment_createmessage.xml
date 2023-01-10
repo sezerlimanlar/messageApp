@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.CreateMessageFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/messagelogo" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/marko_one"
+            android:text="Mesaj"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="362dp"
+            android:layout_height="105dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/style"
+            android:ems="10"
+            android:fontFamily="@font/marko_one"
+            android:gravity="start"
+            android:hint="Mesaj..."
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_create_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#2c64c6"
+            android:fontFamily="@font/marko_one"
+            android:text="MESAJ OLUŞTUR"
+            app:strokeColor="#FFFFFF"
+            app:strokeWidth="1dp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/marko_one"
+            android:text="Mesajlar"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylerview_message"
+            android:layout_width="match_parent"
+            android:layout_height="226dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/marko_one"
+            android:gravity="center"
+            android:text="201913709077 / SEZER LİMANLAR"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</FrameLayout>
